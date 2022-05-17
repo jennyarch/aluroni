@@ -1,10 +1,8 @@
 import styles from './Item.module.scss';
-import cardapio from 'data/cardapio.json';
 import { Prato } from 'types/Prato';
 import TagsPrato from 'components/TagsPrato';
 import { useNavigate } from 'react-router-dom';
 
-type Props = typeof cardapio[0];
 
 export default function Item(props: Prato) {
   const { id, title, description, photo } = props;
